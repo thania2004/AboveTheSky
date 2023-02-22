@@ -6,7 +6,7 @@
             "price": 300,
             "size": "Enana blanca",
             "description": "La estrella, ubicada en la constelación Can Mayor, se encuentra a 8,6 años luz de distancia.",
-            "image": "Assets/Pictures/Sirio.jpg",
+            "image": "/Pictures/Sirio.jpg",
             "seller": "Amazon"
         },
         {
@@ -15,7 +15,7 @@
             "price": 500,
             "size": "Supergigante blanco-amarilla",
             "description": "Una estrella sin igual, ubicada en la constelación Carina, que se encuentra a 309,8 años luz de distancia.",
-            "image": "",
+            "image": "/Pictures/Sirio.jpg",
             "seller": "NASA"
         },
         {
