@@ -25,7 +25,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "axios": "json-server --watch src/Products/Stars.json --port 5000"
+    "axios": "json-server --watch src/Products/Products.json --port 5000"
   },
   "eslintConfig": {
     "extends": [
