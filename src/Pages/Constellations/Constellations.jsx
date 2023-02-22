@@ -5,8 +5,9 @@ import CallAxios from '../../services/CallAxios';
 function Constellations() {
     const [constellation, setConstellations] = useState([]);
 
-    function callGet(){
-        CallAxios().get().then(res => {
+   async function callGet(){
+       await CallAxios().get()
+        .then(res => {
             setConstellations(res.data);
         })
     }
@@ -14,7 +15,12 @@ function Constellations() {
 
 
   return (
-    <div>Constellations</div>
+    <div>{constellation.map(item => (
+      <div> 
+        <p>{item.name}</p>
+        <img src={item.image} />
+      </div>
+    ))}</div>
   )
 }
 
