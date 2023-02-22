@@ -15,7 +15,7 @@
             "price": 500,
             "size": "Supergigante blanco-amarilla",
             "description": "Una estrella sin igual, ubicada en la constelación Carina, que se encuentra a 309,8 años luz de distancia.",
-            "image": "",
+            "image": "/Pictures/Canopus.webp",
             "seller": "NASA"
         },
         {
@@ -24,7 +24,7 @@
             "price": 350,
             "size": "Gigante naranja",
             "description": "La estrella Arturo, ubicada en la constelación Boyero, se encuentra a 36,7 años luz de distancia.",
-            "image": "",
+            "image": "/Pictures/Arturo.jpeg",
             "seller": "NASA"
         },
         {
@@ -33,7 +33,7 @@
             "price": 50,
             "size": "Enana amarilla",
             "description": "Una pequeña estrella, muy llamativa, ubicada en la constelación Centauro, que se encuentra a 4,37 años luz de distancia.",
-            "image": "",
+            "image": "/Pictures/Alfa-Centauri.jpg",
             "seller": "NASA"
         },
         {
@@ -42,7 +42,7 @@
             "price": 100,
             "size": "Gigante blanca",
             "description": "La estrella Hadar, ubicada en la constelación Centauro, se encuentra a 530 años luz de distancia.",
-            "image": "",
+            "image": "/Pictures/Hadar.webp",
             "seller": "Ebay"
         },
         {
@@ -51,7 +51,7 @@
             "price": 50,
             "size": "Enana blanca",
             "description": "Una pequeña estrella, muy llamativa, ubicada en la constelación Águila, que se encuentra a 16,8 años luz de distancia.",
-            "image": "",
+            "image": "/Pictures/Altair.jpg",
             "seller": "Tesla Space"
         },
         {
@@ -60,7 +60,7 @@
             "price": 600,
             "size": "Supergigante roja",
             "description": "La estrella Betelgeuse, ubicada en la constelación Orión, se encuentra a 640 años luz de distancia.",
-            "image": "",
+            "image": "/Pictures/Betelgeuse.jpeg",
             "seller": "NASA"
         },
         {
@@ -69,7 +69,7 @@
             "price": 800,
             "size": "Enana-subgigante blanca",
             "description": "Una pequeña estrella, muy llamativa, ubicada en la constelación Piscis Austrinus, que se encuentra a 25 años luz de distancia.",
-            "image": "",
+            "image": "/Pictures/Fomalhaut.jpg",
             "seller": "Caixa Bank"
         }
     ]
