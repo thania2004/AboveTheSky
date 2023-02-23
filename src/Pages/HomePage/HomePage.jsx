@@ -2,9 +2,10 @@ import React from 'react'
 import { useState, useEffect } from 'react';
 import HomeCards from "../../Components/HomeCards/HomeCards";
 import CallAxios from '../../services/CallAxios';
+import TransparentNav from "../../Components/Header/Header";
 import Grid from '@mui/material/Grid';
 import { Link } from "react-router-dom";
-import TransparentNav from "../../Components/Header/Header";
+import TransparentSimpleBottomNavigation from '../../Components/Footer/Footer';
 
 export default function HomePage() {
 
@@ -31,6 +32,8 @@ export default function HomePage() {
 
 
   return (
+    <>
+    <TransparentNav />
     <div className='card-container'>
       <div>
       <TransparentNav/>
@@ -74,9 +77,9 @@ export default function HomePage() {
           </Grid>
         )).splice(4)}
       </Grid>
+      <div sx={{ position: 'fixed', bottom: 0, left: 0, width: '500%', zIndex: 1, paddingtop: 50 }}>
+  <TransparentSimpleBottomNavigation />
+</div>
     </div>
-  )
-}
-
-
-
+    </>
+  )}
