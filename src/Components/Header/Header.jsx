@@ -11,6 +11,7 @@ import SearchIcon from '@mui/icons-material/Search';
 import La_Caixa_amarillo2 from "../../Assest/La_Caixa_amarillo2.png";
 
 
+
 const Search = styled('div')(({ theme }) => ({
   position: 'relative',
   borderRadius: '20px', 
@@ -63,10 +64,12 @@ const TransparentAppBar = styled(AppBar)(({ theme }) => ({
     backgroundColor: 'transparent',
     borderBottom: `1px solid ${alpha(theme.palette.common.white, 0.1)}`,
   }));
+  
 
 const TransparentNav= () => {
   const theme = useTheme();
   const isSmallScreen = useMediaQuery(theme.breakpoints.down('sm'));
+  
   return (
    
       <TransparentAppBar  sx={{ backgroundColor: 'transparent' }} position="static">
@@ -102,3 +105,4 @@ const TransparentNav= () => {
   );
 }
 export default TransparentNav;
+
