@@ -8,7 +8,9 @@ import Typography from '@mui/material/Typography';
 import InputBase from '@mui/material/InputBase';
 import MenuIcon from '@mui/icons-material/Menu';
 import SearchIcon from '@mui/icons-material/Search';
-import La_Caixa_amarillo2 from "../../Assets/Pictures/La_Caixa_amarillo2.png";
+import La_Caixa_amarillo2 from "../../Assest/La_Caixa_amarillo2.png";
+import {useEffect, useState} from 'react';
+import CallAxios from '../../services/CallAxios';
 
 
 const Search = styled('div')(({ theme }) => ({
@@ -63,13 +65,48 @@ const TransparentAppBar = styled(AppBar)(({ theme }) => ({
     backgroundColor: 'transparent',
     borderBottom: `1px solid ${alpha(theme.palette.common.white, 0.1)}`,
   }));
+  
 
 const TransparentNav= () => {
   const theme = useTheme();
   const isSmallScreen = useMediaQuery(theme.breakpoints.down('sm'));
+  
+
+  const [stars, setStars]= useState([]);
+  const [starCards, setStarCards]= useState([]);
+  const [search, setSearch]= useState("");
+
+  async function callGet(){
+    await CallAxios().getStars()
+     .then(res => {
+         setStars(res.data);
+         setStarCards(res.data);
+     })
+ }
+ useEffect(() => {callGet()},[]);
+
+const handleChange=e=>{
+  setSearch(e.target.value);
+  filtrar(e.target.value);
+}
+
+const filtrar=(inputSearch)=>{
+  var resultsSearch=starCards.filter((element)=>{
+    if(element.name.toString().toLowerCase().includes(inputSearch.toLowerCase())
+    || element.id.toString().toLowerCase().includes(inputSearch.toLowerCase())
+    ){
+      return element;
+    }
+  });
+  setStars(resultsSearch);
+}
+
+
+
+
   return (
-   
-      <TransparentAppBar  sx={{ backgroundColor: 'transparent' }} position="static">
+   <>
+      <TransparentAppBar  sx={{ backgroundColor: 'blue' }} position="static">
         <TransparentBox>
         <Toolbar sx={{ ml: isSmallScreen ? 2 : 25, mx: isSmallScreen ? 2 : 25 }}>
           
@@ -89,6 +126,8 @@ const TransparentNav= () => {
             </SearchIconWrapper>
             <StyledInputBase
             placeholder="Search for your star"
+            onChange={handleChange}
+            value={search}
             inputProps={{ 'aria-label': 'search' }}
         
           />
@@ -97,8 +136,15 @@ const TransparentNav= () => {
           <MenuIcon />
         </Toolbar>
         </TransparentBox>
-      </TransparentAppBar>
+      </TransparentAppBar><div>{stars.map(item => (
+      <div> 
+        <p>{item.name}</p>
+        <img src={item.image} />
+      </div>
+    ))}</div></>
+  )
     
-  );
+  ;
 }
 export default TransparentNav;
+
