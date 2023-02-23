@@ -1,5 +1,5 @@
 import * as React from 'react';
-//import TransparentAppBar from "./Components/Header/Header";
+import TransparentAppBar from "./Components/Header/Header";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 //import HomePage from './Pages/HomePage/HomePage';
 import SimpleBottomNavigation from './Components/Footer/Footer';
@@ -9,10 +9,10 @@ import SimpleBottomNavigation from './Components/Footer/Footer';
 
 function App() {
 
-  const router = createBrowserRouter([/*{
+  const router = createBrowserRouter([{
     path: "/",
     element: <TransparentAppBar />
-  },{
+  },/*{
     path: "/",
     element: <HomePage />
   },/* {
