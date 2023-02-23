@@ -1,13 +1,15 @@
-import TransparentAppBar from "./Components/Header/Header";
+import * as React from 'react';
+//import TransparentAppBar from "./Components/Header/Header";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
-import HomePage from './Pages/HomePage/HomePage';
+//import HomePage from './Pages/HomePage/HomePage';
+import SimpleBottomNavigation from './Components/Footer/Footer';
 //import Stars from './Pages/Stars/Stars';
 //import Constellations from './Pages/Constellations/Constellations';
 //import Tattoos from './Pages/Tattoos/Tattoos'
 
 function App() {
 
-  const router = createBrowserRouter([{
+  const router = createBrowserRouter([/*{
     path: "/",
     element: <TransparentAppBar />
   },{
@@ -23,6 +25,10 @@ function App() {
     path: "/Tattoos",
     element: <Tattoos />
   }*/
+  {
+    path: "/",
+    element: <SimpleBottomNavigation />
+  }
   ])
 
   return (
