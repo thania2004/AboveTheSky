@@ -54,6 +54,8 @@
 <li>React</li>
 <li>MUI</li>
 <li>NPM</li>
+<li>Axios</li>
+<li>Jest</li>
 </ul>
 
 <h2>9. Required:</h2>
@@ -66,12 +68,6 @@
 <li>Copy in the terminal: git clone https://github.com/RaulVillar/AboveTheSky.git</li>
 <li>Type in the IDE terminal: <b>npm install</b> and press intro.</li>
 <li>Write in the IDE terminal the command: <b>npm start</b>.</li>
-
-<h3>Warning & Testing</h3>
-<ol>
-<li><b>Important</b>: If we then need to run more commands in the IDE, we'll open a third terminal without closing the previous one where.</li>
-<li><b>Test</b>: Run in the IDE <b>php artisan test</b> & <b>vendor/bin/phpunit</b> where it should return the following result:<b> 5 passed</b> and <b> OK (5 test, 12 assertions)</b></li>
-</ol>
 
 <h2>10. Methodology:</h2>
 <ul>
