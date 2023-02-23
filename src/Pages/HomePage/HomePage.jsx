@@ -29,8 +29,12 @@ export default function HomePage() {
 
   return (
     <div>
-      <h1>Estrellas</h1>
-      <div style={{ display: 'flex', flexDirection: 'row' }}>
+      <div style={{ display: 'flex', justifyContent: "space-between"}}>
+        <h1>Estrellas</h1>
+        <h2>Ver más</h2>
+      </div>
+      
+      <div style={{ display: 'flex', flexDirection: 'row', justifyContent: "center"}}>
         {stars.map(item => (
           <div key={item.id}>
             <HomeCards
@@ -43,8 +47,12 @@ export default function HomePage() {
           </div>
         )).splice (4)}
       </div>
-      <h1>Constelaciones</h1>
-      <div style={{ display: 'flex', flexDirection: 'row', height: "500px" }}>
+      <div style={{ display: 'flex', justifyContent: "space-between"}}>
+        <h1>Constelaciones</h1>
+        <h2>Ver más</h2>
+      </div>
+      
+      <div style={{ display: 'flex', flexDirection: 'row', height: "500px", justifyContent: "center"}}>
         {constellations.map(item => (
           <div key={item.id}>
             <HomeCards
