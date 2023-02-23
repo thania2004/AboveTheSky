@@ -2,7 +2,6 @@ import React from 'react'
 import { useState, useEffect } from 'react';
 import HomeCards from "../../Components/HomeCards/HomeCards";
 import CallAxios from '../../services/CallAxios';
-// import data from "../../Products/Products.json"
 
 export default function HomePage() {
 
@@ -60,44 +59,6 @@ export default function HomePage() {
       </div>
     </div>
   )
-
-
-
-
-
-  // return (
-  //   <div>
-  //     <h1>Constelaciones</h1>
-  //     <ul>
-  //     {constellations.map(constellation => (
-  //         <li key={constellation.id}>
-  //           <HomeCards image={constellation.image} Title={constellation.name} Paragraph={constellation.description}/>
-  //           {/* <h2>{constellation.name}</h2>
-  //           <p>{constellation.description}</p>
-  //           <img src={constellation.image} alt={constellation.name} />
-  //           <p>Precio: {constellation.price}</p>
-  //           <p>Vendedor: {constellation.seller}</p> */}
-  //         </li>
-  //       ))}
-  //     </ul>
-  //     <h1>Estrellas</h1>
-  //     <ul>
-  //     {stars.map(star => (
-  //         <li key={star.id}>
-  //           <h2>{star.name}</h2>
-  //           <p>{star.description}</p>
-  //           <img src={star.image} alt={star.name}/>
-  //           <p>Precio: {star.price}</p>
-  //           <p>Tamaño: {star.size}</p>
-  //           <p>Vendedor: {star.seller}</p>
-  //         </li>
-  //       ))}
-  //     </ul>
-  //   </div>
-  // );
-
-
-
 }
 
 
