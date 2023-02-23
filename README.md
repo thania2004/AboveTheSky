@@ -18,13 +18,13 @@
 <h2>3. Fullstack Developer Team</h2>
 
 - [Alicia Fernandez](https://github.com/alcfdez)- Product Owner
-- [Miriam García](...)- Scrum Master
+- [Miriam García](https://github.com/miriamremesal)- Scrum Master
 - [Amelie Le Tron](https://github.com/AmelieLT)- Developer
 - [Meena Habibi](https://github.com/123meena-git) - Developer
 - [Raul Villar](https://github.com/RaulVillar) - Developer
 - [Erick Crespin](https://github.com/ecp12) - Developer
 - [Natalia Palomo](https://github.com/Nataliaplm) - Developer
-- [Thania Gamarra](...) - Developer
+- [Thania Gamarra](https://github.com/thania2004) - Developer
 - [Edurne Montalban](https://github.com/Shamanesss) - Developer
 
 
@@ -48,6 +48,8 @@
 
 <h2>8. Stacks</h2>
 <ul>
+<li>Figma</li>
+<li>Trello</li>
 <li>HTML5</li>
 <li>CSS3</li>
 <li>JSON</li>
