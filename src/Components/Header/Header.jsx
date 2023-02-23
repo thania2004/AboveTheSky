@@ -8,7 +8,7 @@ import Typography from '@mui/material/Typography';
 import InputBase from '@mui/material/InputBase';
 import MenuIcon from '@mui/icons-material/Menu';
 import SearchIcon from '@mui/icons-material/Search';
-import La_Caixa_amarillo2 from "../../Assets/Pictures/La_Caixa_amarillo2.png";
+import La_Caixa_amarillo2 from "../../Assest/La_Caixa_amarillo2.png";
 
 
 const Search = styled('div')(({ theme }) => ({
