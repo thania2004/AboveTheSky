@@ -16,7 +16,7 @@ function Stars() {
 
 
   return (
-    <div>{constellation.map(item => (
+    <div>{stars.map(item => (
       <div key={item.id}>
         <HomeCards
         Image={item.image}
@@ -24,7 +24,6 @@ function Stars() {
         price={item.price}
         size={item.size}
         description={item.description}/> 
-        
       </div>
     ))}</div>
   )

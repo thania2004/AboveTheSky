@@ -1,10 +1,10 @@
 import React from 'react';
 import { useState, useEffect } from 'react';
 import CallAxios from '../../services/CallAxios';
-
+import HomeCards from '../../Components/HomeCards/HomeCards'
 
 function Constellations() {
-    const [constellation, setConstellations] = useState([]);
+    const [constellations, setConstellations] = useState([]);
 
    async function callGet(){
        await CallAxios().getConstellations()
@@ -16,10 +16,14 @@ function Constellations() {
 
 
   return (
-    <div>{constellation.map(item => (
-      <div> 
-        <p>{item.name}</p>
-        <img src={item.image} />
+    <div>{constellations.map(item => (
+      <div key={item.id}>
+        <HomeCards
+        Image={item.image}
+        Title={item.name}
+        price={item.price}
+        size={item.size}
+        description={item.description}/> 
       </div>
     ))}</div>
   )

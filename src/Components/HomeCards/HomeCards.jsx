@@ -166,7 +166,7 @@ export default function ActionAreaCard(props) {
             {props.Title}
           </Typography>
           <Typography variant="body2" color="text.secondary">
-           {props.price}
+           {props.price + " " + "€"}
           </Typography>
           <Typography variant="body2" color="text.secondary">
            {props.size}
