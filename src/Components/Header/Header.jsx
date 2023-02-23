@@ -86,7 +86,7 @@ const TransparentNav = () => {
       .get()
       .then((res) => {
         setConstellations(res.data);
-       
+
       });
   }
   useEffect(() => {
@@ -95,18 +95,16 @@ const TransparentNav = () => {
 
   const handleChange = (e) => {
     setSearch(e.target.value);
-    filtrar(e.target.value);
+    filter(e.target.value);
   };
 
-  const filtrar = (inputSearch) => {
+  const filter = (inputSearch) => {
     var resultsSearch = constellations.filter((element) => {
-      if (
-        element.name
-          .toString()
-          .toLowerCase()
-          .includes(inputSearch.toLowerCase()) ||
-        element.id.toString().toLowerCase().includes(inputSearch.toLowerCase())
-      ) {
+      if (element.name
+        .toString()
+        .toLowerCase()
+        .includes(inputSearch.toLowerCase()) ||
+        element.id.toString().toLowerCase().includes(inputSearch.toLowerCase())) {
         return element;
       }
     });
@@ -115,7 +113,13 @@ const TransparentNav = () => {
 
   return (
     <>
-      <TransparentAppBar sx={{ backgroundColor: "transparent" }} position="static">
+      <TransparentAppBar
+        stars={stars}
+        constellations={constellations}
+        search={search}
+        handleChange={handleChange}
+        filter={filter}
+        sx={{ backgroundColor: "transparent" }} position="static">
         <TransparentBox>
           <Toolbar
             sx={{ ml: isSmallScreen ? 2 : 25, mx: isSmallScreen ? 2 : 25 }}
@@ -126,8 +130,7 @@ const TransparentNav = () => {
               <img
                 src={La_Caixa_amarillo2}
                 alt="La_Caixa_amarillo2"
-                height={isSmallScreen ? 50 : 75}
-              />
+                height={isSmallScreen ? 50 : 75} />
               <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
                 <span
                   style={{
@@ -165,8 +168,7 @@ const TransparentNav = () => {
                 placeholder="Search for your star"
                 onChange={handleChange}
                 value={search}
-                inputProps={{ "aria-label": "search" }}
-              />
+                inputProps={{ "aria-label": "search" }} />
             </Search>
             <YellowSearchIcon />
             <YellowMenuIcon />
@@ -183,5 +185,5 @@ const TransparentNav = () => {
       </div>
     </>
   );
-};
+}
 export default TransparentNav;
