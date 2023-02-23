@@ -78,15 +78,15 @@ const TransparentNav = () => {
   const isSmallScreen = useMediaQuery(theme.breakpoints.down("sm"));
 
   const [stars, setStars] = useState([]);
-  const [starCards, setStarCards] = useState([]);
+  const [constellations, setConstellations] = useState([]);
   const [search, setSearch] = useState("");
 
   async function callGet() {
     await CallAxios()
-      .getStars()
+      .get()
       .then((res) => {
-        setStars(res.data);
-        setStarCards(res.data);
+        setConstellations(res.data);
+       
       });
   }
   useEffect(() => {
@@ -99,7 +99,7 @@ const TransparentNav = () => {
   };
 
   const filtrar = (inputSearch) => {
-    var resultsSearch = starCards.filter((element) => {
+    var resultsSearch = constellations.filter((element) => {
       if (
         element.name
           .toString()
