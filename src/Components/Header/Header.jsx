@@ -7,9 +7,9 @@ import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import InputBase from '@mui/material/InputBase';
 import MenuIcon from '@mui/icons-material/Menu';
-import {useState} from 
 import SearchIcon from '@mui/icons-material/Search';
-import La_Caixa_amarillo2 from "./La_Caixa_amarillo2.png";
+import La_Caixa_amarillo2 from "../../Assets/Pictures/La_Caixa_amarillo2.png";
+
 
 const Search = styled('div')(({ theme }) => ({
   position: 'relative',
@@ -54,23 +54,7 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
   },
 }));
 
-const data = [
-  { id: 1, name: 'Star1' },
-  { id: 2, name: 'Star2' },
-  { id: 3, name: 'Star3' },
-];
-
 export default function SearchAppBar() {
-  const [query, setQuery] = useState('');
-  const [filteredData, setFilteredData] = useState(data);
-  
-  const handleSearch = (event) => {
-    const value = event.target.value.toLowerCase();
-    const result = data.filter((item) => item.name.toLowerCase().includes(value));
-    setFilteredData(result);
-    setQuery(value);
-  };
-  
   const theme = useTheme();
   const isSmallScreen = useMediaQuery(theme.breakpoints.down('sm'));
   return (
@@ -98,8 +82,7 @@ export default function SearchAppBar() {
             <StyledInputBase
             placeholder="Search for your star"
             inputProps={{ 'aria-label': 'search' }}
-            value={query}
-            onChange={handleSearch}
+        
           />
           </Search>
           <SearchIcon />
