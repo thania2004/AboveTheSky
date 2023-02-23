@@ -28,13 +28,13 @@ export default function HomePage() {
 
 
   return (
-    <div>
+    <div className='card-container'>
       <div style={{ display: 'flex', justifyContent: "space-between"}}>
-        <h1>Estrellas</h1>
-        <h2>Ver más</h2>
+        <h1 style={{ color: "white"}}>Estrellas</h1>
+        <h2 style={{ color: "white"}}>Ver más</h2>
       </div>
       
-      <div style={{ display: 'flex', flexDirection: 'row', justifyContent: "center"}}>
+      <div className="each-card-container" style={{ display: 'flex', flexDirection: 'row', justifyContent: "center"}}>
         {stars.map(item => (
           <div key={item.id}>
             <HomeCards
@@ -48,8 +48,8 @@ export default function HomePage() {
         )).splice (4)}
       </div>
       <div style={{ display: 'flex', justifyContent: "space-between"}}>
-        <h1>Constelaciones</h1>
-        <h2>Ver más</h2>
+        <h1 style={{ color: "white"}}>Constelaciones</h1>
+        <h2 style={{ color: "white"}}>Ver más</h2>
       </div>
       
       <div style={{ display: 'flex', flexDirection: 'row', height: "500px", justifyContent: "center"}}>
