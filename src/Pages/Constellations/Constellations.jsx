@@ -2,6 +2,7 @@ import React from 'react';
 import { useState, useEffect } from 'react';
 import CallAxios from '../../services/CallAxios';
 import HomeCards from '../../Components/HomeCards/HomeCards'
+import Grid from '@mui/material/Grid';
 
 function Constellations() {
     const [constellations, setConstellations] = useState([]);
@@ -16,16 +17,20 @@ function Constellations() {
 
 
   return (
-    <div>{constellations.map(item => (
-      <div key={item.id}>
+    <div><Grid container spacing={2} columns={16}  sx={{mx:5}} >
+    {constellations.map(item => (
+      <Grid sx={{mt:4}} key={item.id}>
         <HomeCards
-        Image={item.image}
-        Title={item.name}
-        price={item.price}
-        size={item.size}
-        description={item.description}/> 
-      </div>
-    ))}</div>
+          Image={item.image}
+          Title={item.name}
+          price={item.price}
+          size={item.size}
+          seller={item.seller}
+          description={item.description}
+        />
+      </Grid>
+    ))}
+  </Grid></div>
   )
 }
 

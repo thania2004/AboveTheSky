@@ -6,6 +6,8 @@ import HomePage from './Pages/HomePage/HomePage';
 //import Stars from './Pages/Stars/Stars';
 //import Constellations from './Pages/Constellations/Constellations';
 //import Tattoos from './Pages/Tattoos/Tattoos'
+import Stars from './Pages/Stars/Stars';
+import Constellations from './Pages/Constellations/Constellations';
 
 function App() {
 

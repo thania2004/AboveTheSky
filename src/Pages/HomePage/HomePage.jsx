@@ -3,6 +3,10 @@ import { useState, useEffect } from 'react';
 import HomeCards from "../../Components/HomeCards/HomeCards";
 import CallAxios from '../../services/CallAxios';
 import TransparentNav from "../../Components/Header/Header";
+import Grid from '@mui/material/Grid';
+import { Link } from "react-router-dom";
+
+import Box from "@mui/joy/Box";
 
 export default function HomePage() {
 
@@ -29,47 +33,45 @@ export default function HomePage() {
 
 
   return (
-    <div>
-      <div>
-        <TransparentNav/>
-      </div>
-      <div className='card-container'>
-        <div style={{ display: 'flex', justifyContent: "space-between"}}>
-          <h1 style={{ color: "white"}}>Estrellas</h1>
-          <h2 style={{ color: "white"}}>Ver más</h2>
-        </div>
-        
-        <div className="each-card-container" style={{ display: 'flex', flexDirection: 'row', justifyContent: "center"}}>
-          {stars.map(item => (
-            <div key={item.id}>
-              <HomeCards
-                Image={item.image}
-                Title={item.name}
-                price={item.price}
-                size={item.size}
-                description={item.description}
-              />
-            </div>
-          )).splice (4)}
-        </div>
-        <div style={{ display: 'flex', justifyContent: "space-between"}}>
-          <h1 style={{ color: "white"}}>Constelaciones</h1>
-          <h2 style={{ color: "white"}}>Ver más</h2>
-        </div>
-        
-        <div style={{ display: 'flex', flexDirection: 'row', height: "500px", justifyContent: "center"}}>
-          {constellations.map(item => (
-            <div key={item.id}>
-              <HomeCards
-                Image={item.image}
-                Title={item.name}
-                price={item.price}
-                size={item.size}
-                description={item.description}
-              />
-            </div>
-          )).splice (4)}
-        </div>
-      </div>
+    <div className='card-container'>
+      <Grid display= "flex" justifyContent="space-between" alignItems="center" spacing={2} sx={{mx:8}}>
+        <h1 style={{ color: "white"}}>Estrellas</h1>
+        <Link to="/Stars"><h2 style={{ color: "white"}}>Ver más</h2></Link>
+      </Grid>
+      
+      <Grid container spacing={2} columns={16} sx={{mx:5}}>
+        {stars.map(item => (
+          <Grid sx={{mt:4}} key={item.id}>
+            <HomeCards 
+              Image={item.image}
+              Title={item.name}
+              price={item.price}
+              size={item.size}
+              seller={item.seller}
+              description={item.description}
+              
+            />
+          </Grid>
+        )).splice (4)}
+      </Grid> 
+      <Grid display= "flex" justifyContent="space-between" alignItems="center" spacing={2} sx={{mx:8}}>
+        <h1 style={{ color: "white"}}>Constelaciones</h1>
+        <Link to="/Constellations"><h2 style={{ color: "white"}}>Ver más</h2></Link>
+      </Grid>
+      
+      <Grid container spacing={2} columns={16}  sx={{mx:5}} >
+        {constellations.map(item => (
+          <Grid sx={{mt:4}} key={item.id}>
+            <HomeCards
+              Image={item.image}
+              Title={item.name}
+              price={item.price}
+              size={item.size}
+              seller={item.seller}
+              description={item.description}
+            />
+          </Grid>
+        )).splice (4)}
+      </Grid>
     </div>
   )}
