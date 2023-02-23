@@ -1,11 +1,11 @@
-import SearchAppBar from "./Components/Header/Header";
+import TransparentAppBar from "./Components/Header/Header";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 
 function App() {
 
   const router = createBrowserRouter([{
     path: "/",
-    element: <SearchAppBar />
+    element: <TransparentAppBar />
   },/*{
     path: "/",
     element: <HomePage />

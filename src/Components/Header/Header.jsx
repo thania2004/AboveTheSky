@@ -54,21 +54,29 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
   },
 }));
 
-export default function SearchAppBar() {
+const TransparentAppBar = styled(AppBar)(({ theme }) => ({
+    backgroundColor: 'transparent',
+    boxShadow: 'none',
+    borderBottom: `1px solid ${alpha(theme.palette.common.white, 0.1)}`,
+  }));
+  const TransparentBox = styled(Box)(({ theme }) => ({
+    backgroundColor: 'transparent',
+    borderBottom: `1px solid ${alpha(theme.palette.common.white, 0.1)}`,
+  }));
+
+const TransparentNav= () => {
   const theme = useTheme();
   const isSmallScreen = useMediaQuery(theme.breakpoints.down('sm'));
   return (
    
-      <AppBar  sx={{ backgroundColor: 'blue' }}>
+      <TransparentAppBar  sx={{ backgroundColor: 'transparent' }} position="static">
+        <TransparentBox>
         <Toolbar sx={{ ml: isSmallScreen ? 2 : 25, mx: isSmallScreen ? 2 : 25 }}>
           
           <Box sx={{ display: 'flex', flexGrow: 1, my: 2, alignItems: 'center' }}>
             <img src={La_Caixa_amarillo2} alt="La_Caixa_amarillo2" height={isSmallScreen ? 50 : 75} />
             <Typography 
-                variant="h6"
-                Wrap
-                component="div"
-                sx={{ flexGrow: 1, mx: 2 }}
+                variant="h6" component="div" sx={{ flexGrow: 1 }}
               >
                 <span style={{ fontSize: isSmallScreen ? '2rem' : '2rem', padding: 5 }}>Above</span> 
                 <span style={{ fontSize: isSmallScreen ? '1rem' : '1.5rem', HorizontalAlign: 'super', padding: 5 }}>the</span> 
@@ -88,7 +96,9 @@ export default function SearchAppBar() {
           <SearchIcon />
           <MenuIcon />
         </Toolbar>
-      </AppBar>
+        </TransparentBox>
+      </TransparentAppBar>
     
   );
 }
+export default TransparentNav;
