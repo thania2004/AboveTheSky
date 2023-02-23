@@ -4,6 +4,7 @@ import HomeCards from "../../Components/HomeCards/HomeCards";
 import CallAxios from '../../services/CallAxios';
 import Grid from '@mui/material/Grid';
 import { Link } from "react-router-dom";
+import TransparentNav from "../../Components/Header/Header";
 
 export default function HomePage() {
 
@@ -31,6 +32,9 @@ export default function HomePage() {
 
   return (
     <div className='card-container'>
+      <div>
+      <TransparentNav/>
+      </div>
       <Grid display="flex" justifyContent="space-between" alignItems="center" spacing={2} sx={{ mx: 8 }}>
         <h1 style={{ color: "white" }}>Estrellas</h1>
         <Link to="/Stars"><h2 style={{ color: "white" }}>Ver más</h2></Link>
