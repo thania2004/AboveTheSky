@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 import React from 'react'
 import { useState, useEffect } from 'react';
 import HomeCards from "../../Components/HomeCards/HomeCards";
@@ -73,4 +71,3 @@ export default function HomePage() {
 
 
 
->>>>>>> 48cb3f984d439f3a4b7a8032b527341ef520b386
