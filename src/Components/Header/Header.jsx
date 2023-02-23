@@ -139,7 +139,7 @@ const filtrar=(inputSearch)=>{
       </TransparentAppBar><div>{stars.map(item => (
       <div> 
         <p>{item.name}</p>
-        <img src={item.image} />
+        <img src={item.image}/>
       </div>
     ))}</div></>
   )
