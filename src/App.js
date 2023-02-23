@@ -1,5 +1,9 @@
-import TransparentAppBar from "./Components/Header/Header";
+import './App.css';
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
+import HomePage from './Pages/HomePage/HomePage';
+import Stars from './Pages/Stars/Stars';
+import Constellations from './Pages/Constellations/Constellations';
+import Tattoos from './Pages/Tattoos/Tattoos'
 
 function App() {
 
