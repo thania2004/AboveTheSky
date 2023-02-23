@@ -16,10 +16,7 @@ function App() {
   }, {
     path: "/Constellations",
     element: <Constellations />
-  }, {
-    path: "/Tattoos",
-    element: <Tattoos />
-  }
+  }, 
   ])
 
   return (
