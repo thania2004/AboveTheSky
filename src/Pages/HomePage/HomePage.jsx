@@ -33,7 +33,6 @@ export default function HomePage() {
 
   return (
     <>
-    <TransparentNav />
     <div className='card-container'>
       <div>
       <TransparentNav/>

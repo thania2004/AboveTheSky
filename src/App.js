@@ -2,12 +2,9 @@ import * as React from 'react';
 
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import HomePage from './Pages/HomePage/HomePage';
-//import SimpleBottomNavigation from './Components/Footer/Footer';
-//import Stars from './Pages/Stars/Stars';
-//import Constellations from './Pages/Constellations/Constellations';
-//import Tattoos from './Pages/Tattoos/Tattoos'
 import Stars from './Pages/Stars/Stars';
 import Constellations from './Pages/Constellations/Constellations';
+import Form from "./Pages/Form/Form"
 
 function App() {
 

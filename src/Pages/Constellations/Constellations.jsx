@@ -4,6 +4,7 @@ import CallAxios from '../../services/CallAxios';
 import HomeCards from '../../Components/HomeCards/HomeCards'
 import Grid from '@mui/material/Grid';
 import TransparentNav from "../../Components/Header/Header";
+import TransparentSimpleBottomNavigation from '../../Components/Footer/Footer';
 
 function Constellations() {
   const [constellations, setConstellations] = useState([]);
@@ -39,7 +40,9 @@ function Constellations() {
             />
           </Grid>
         ))}
-      </Grid></div>
+      </Grid>
+      <TransparentSimpleBottomNavigation />
+      </div>
   )
 }
 

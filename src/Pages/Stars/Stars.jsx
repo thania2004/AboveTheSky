@@ -4,6 +4,7 @@ import CallAxios from '../../services/CallAxios';
 import HomeCards from '../../Components/HomeCards/HomeCards'
 import Grid from '@mui/material/Grid';
 import TransparentNav from "../../Components/Header/Header";
+import TransparentSimpleBottomNavigation from '../../Components/Footer/Footer';
 
 function Stars() {
 
@@ -40,6 +41,7 @@ function Stars() {
           </Grid>
         ))}
       </Grid>
+      <TransparentSimpleBottomNavigation />
     </div>
   )
 }
