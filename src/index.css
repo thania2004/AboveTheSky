@@ -11,25 +11,3 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-image: url(../public/Pictures/Fondo.jpg);
 }
-
-
-
-/* @media (max-width: 800px) {
-
-  .card-container {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      height: auto;
-      padding-left: 10vh;
-      padding-right: 10vh;
-  }
-
-  .each-card-container {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      height: auto;
-      width: 60vw;
-  }
-} */

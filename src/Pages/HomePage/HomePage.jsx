@@ -5,8 +5,6 @@ import CallAxios from '../../services/CallAxios';
 import Grid from '@mui/material/Grid';
 import { Link } from "react-router-dom";
 
-import Box from "@mui/joy/Box";
-
 export default function HomePage() {
 
   const [stars, setStars] = useState([]);
@@ -33,34 +31,34 @@ export default function HomePage() {
 
   return (
     <div className='card-container'>
-      <Grid display= "flex" justifyContent="space-between" alignItems="center" spacing={2} sx={{mx:8}}>
-        <h1 style={{ color: "white"}}>Estrellas</h1>
-        <Link to="/Stars"><h2 style={{ color: "white"}}>Ver más</h2></Link>
+      <Grid display="flex" justifyContent="space-between" alignItems="center" spacing={2} sx={{ mx: 8 }}>
+        <h1 style={{ color: "white" }}>Estrellas</h1>
+        <Link to="/Stars"><h2 style={{ color: "white" }}>Ver más</h2></Link>
       </Grid>
-      
-      <Grid container spacing={2} columns={16} sx={{mx:5}}>
+
+      <Grid container spacing={2} columns={16} sx={{ mx: 5 }}>
         {stars.map(item => (
-          <Grid sx={{mt:4}} key={item.id}>
-            <HomeCards 
+          <Grid sx={{ mt: 4 }} key={item.id}>
+            <HomeCards
               Image={item.image}
               Title={item.name}
               price={item.price}
               size={item.size}
               seller={item.seller}
               description={item.description}
-              
+
             />
           </Grid>
-        )).splice (4)}
-      </Grid> 
-      <Grid display= "flex" justifyContent="space-between" alignItems="center" spacing={2} sx={{mx:8}}>
-        <h1 style={{ color: "white"}}>Constelaciones</h1>
-        <Link to="/Constellations"><h2 style={{ color: "white"}}>Ver más</h2></Link>
+        )).splice(4)}
       </Grid>
-      
-      <Grid container spacing={2} columns={16}  sx={{mx:5}} >
+      <Grid display="flex" justifyContent="space-between" alignItems="center" spacing={2} sx={{ mx: 8 }}>
+        <h1 style={{ color: "white" }}>Constelaciones</h1>
+        <Link to="/Constellations"><h2 style={{ color: "white" }}>Ver más</h2></Link>
+      </Grid>
+
+      <Grid container spacing={2} columns={16} sx={{ mx: 5 }} >
         {constellations.map(item => (
-          <Grid sx={{mt:4}} key={item.id}>
+          <Grid sx={{ mt: 4 }} key={item.id}>
             <HomeCards
               Image={item.image}
               Title={item.name}
@@ -70,7 +68,7 @@ export default function HomePage() {
               description={item.description}
             />
           </Grid>
-        )).splice (4)}
+        )).splice(4)}
       </Grid>
     </div>
   )
