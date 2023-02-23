@@ -116,6 +116,7 @@ import Favorite from "@mui/icons-material/Favorite";
 import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart';
 import Backdrop from '@mui/material/Backdrop';
 import CircularProgress from '@mui/material/CircularProgress';
+import Box from "@mui/joy/Box";
 
 export default function ActionAreaCard(props) {
     const [open, setOpen] = React.useState(false);
@@ -126,28 +127,17 @@ export default function ActionAreaCard(props) {
         setOpen(!open);
       };
   return (
-    <Card  sx={{ maxWidth: 345 }}>
+    <Card spacing={4} elevation={3} sx={{bgcolor: 'RGB(117, 44, 160, 0.85)', maxWidth: 400,mx:2,borderRadius: '5%', }}>
       <CardActionArea>
-        <CardMedia
+        <CardMedia sx={{ mx:1, width: 320, p:4 }}
           component="img"
-          height="140"
+          width='30'
           image={props.Image}
           alt="green iguana"
+          
         />
-        <CardContent>
-          <Typography gutterBottom variant="h5" component="div">
-            {props.Title}
-          </Typography>
-          <Typography variant="body2" color="text.secondary">
-           {props.price}
-          </Typography>
-          <Typography variant="body2" color="text.secondary">
-           {props.size}
-          </Typography>
-          <Typography variant="body2" color="text.secondary">
-           {props.description}
-          </Typography>
-          <Link
+        <Box sx={{ display: "flex", gap: 1.5, mt: "auto", mx:4 }}>
+        <Link
               href="#dribbble-shot"
               level="body3"
               underline="none"
@@ -170,6 +160,20 @@ export default function ActionAreaCard(props) {
                 "&:hover": {color:'#FFFBF3'},
               }}
             ></Link>
+            </Box>
+        <CardContent sx={{mx:4,}}>
+          <Typography gutterBottom variant="h5" component="div">
+            {props.Title}
+          </Typography>
+          <Typography variant="body2" color="text.secondary">
+           {props.price}
+          </Typography>
+          <Typography variant="body2" color="text.secondary">
+           {props.size}
+          </Typography>
+          <Typography variant="body2" color="text.secondary">
+           {props.description}
+          </Typography>
         </CardContent>
       </CardActionArea>
       <Backdrop
