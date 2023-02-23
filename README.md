@@ -1,4 +1,4 @@
-<h1 align="center">Above the Sky</h1>
+<h1 align="center">✨Above the Sky✨</h1>
 
 <h2>1. Project description:</h2>
 <ul>
