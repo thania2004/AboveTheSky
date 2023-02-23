@@ -5,8 +5,7 @@ import CallAxios from '../../services/CallAxios';
 import TransparentNav from "../../Components/Header/Header";
 import Grid from '@mui/material/Grid';
 import { Link } from "react-router-dom";
-
-import Box from "@mui/joy/Box";
+import TransparentSimpleBottomNavigation from '../../Components/Footer/Footer';
 
 export default function HomePage() {
 
@@ -33,6 +32,8 @@ export default function HomePage() {
 
 
   return (
+    <>
+    <TransparentNav />
     <div className='card-container'>
       <Grid display= "flex" justifyContent="space-between" alignItems="center" spacing={2} sx={{mx:8}}>
         <h1 style={{ color: "white"}}>Estrellas</h1>
@@ -73,5 +74,9 @@ export default function HomePage() {
           </Grid>
         )).splice (4)}
       </Grid>
+      <div sx={{ position: 'fixed', bottom: 0, left: 0, width: '500%', zIndex: 1, paddingtop: 50 }}>
+  <TransparentSimpleBottomNavigation />
+</div>
     </div>
+    </>
   )}

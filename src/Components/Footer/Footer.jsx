@@ -1,6 +1,6 @@
 import * as React from 'react';
-import Box from '@mui/material/Box';
-import BottomNavigation from '@mui/material/BottomNavigation';
+import TransparentBox from '@mui/material/Box';
+import TransparentBottomNavigation from '@mui/material/BottomNavigation';
 import Typography from '@mui/material/Typography';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import Toolbar from '@mui/material/Toolbar';
@@ -8,39 +8,44 @@ import La_Caixa_amarillo2 from "../../Assest/La_Caixa_amarillo2.png";
 
 const styles = {
   footer: {
-    position: 'fixed',
+    position: 'relative',
     bottom: 0,
     width: '100%',
   },
 };
 
-export default function SimpleBottomNavigation() {
+export default function TransparentSimpleBottomNavigation() {
   const [value, setValue] = React.useState(0);
-  const isSmallScreen = useMediaQuery('(max-width:600px)');
+  const isBigScreen = useMediaQuery('(max-width:600px)');
 
   return (
-    <Box sx={styles.footer}>
-      <BottomNavigation position='relative' 
-        showLabels
-        value={value}
-        onChange={(event, newValue) => {
-          setValue(newValue);
-        }}
+    <div style={{ height: '100' }}>
+      <TransparentBox sx={styles.footer}>
+        <TransparentBottomNavigation 
+          position='relative' 
+          sx={{ backgroundColor: "transparent", justifyContent: 'left' }} 
+          showLabels
+          value={value}
+          onChange={(event, newValue) => {
+            setValue(newValue);
+          }}
+        >
+          <Toolbar sx={{ ml: isBigScreen ? 2 : 25, mx: isBigScreen ? 2 : 25, }}>
+    <TransparentBox sx={{ display: 'flex', flexGrow: 1, my: 2, alignItems: 'Left', paddingTop: 20 }}>
+      <img src={La_Caixa_amarillo2} alt="La_Caixa_amarillo2" height={isBigScreen ? 50 : 75} />
+      <Typography 
+        variant="h6" 
+        component="div" 
+        sx={{ flexGrow: 1 }}
       >
-        <Toolbar sx={{ ml: isSmallScreen ? 2 : 25, mx: isSmallScreen ? 2 : 25 }}>
-          
-          <Box sx={{ display: 'flex', flexGrow: 1, my: 2, alignItems: 'center' }}>
-            <img src={La_Caixa_amarillo2} alt="La_Caixa_amarillo2" height={isSmallScreen ? 50 : 75} />
-            <Typography 
-                variant="h6" component="div" sx={{ flexGrow: 1 }}
-              >
-                <span style={{ fontSize: isSmallScreen ? '2rem' : '2rem', padding: 5 }}>Above</span> 
-                <span style={{ fontSize: isSmallScreen ? '1rem' : '1.5rem', HorizontalAlign: 'super', padding: 5 }}>the</span> 
-                <span style={{ fontSize: isSmallScreen ? '2rem' : '2rem', color: '#ffef57', padding: 5 }}>Stars</span>
-              </Typography>
-          </Box>
-        </Toolbar>
-      </BottomNavigation>
-    </Box>
-  );
+        <span style={{ fontSize: isBigScreen ? '2rem' : '2rem', color: 'white', margintop: 5 }}>Above</span> 
+        <span style={{ fontSize: isBigScreen ? '1rem' : '1.5rem', color: 'white', HorizontalAlign: 'super',  margintop: 5}}>the</span> 
+        <span style={{ fontSize: isBigScreen ? '2rem' : '2rem', color: '#ffef57'}}>Stars</span>
+      </Typography>
+    </TransparentBox>
+  </Toolbar>
+        </TransparentBottomNavigation>
+      </TransparentBox>
+    </div>
+  )
 }
