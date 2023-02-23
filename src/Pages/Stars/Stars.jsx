@@ -3,19 +3,19 @@ import { useState, useEffect } from 'react';
 import CallAxios from '../../services/CallAxios';
 
 function Stars() {
-    const [constellation, setConstellations] = useState([]);
+    const [stars, setStars] = useState([]);
 
    async function callGet(){
        await CallAxios().getStars()
         .then(res => {
-            setConstellations(res.data);
+            setStars(res.data);
         })
     }
     useEffect(() => {callGet()},[]);
 
 
   return (
-    <div>{constellation.map(item => (
+    <div>{stars.map(item => (
       <div> 
         <p>{item.name}</p>
         <img src={item.image} />

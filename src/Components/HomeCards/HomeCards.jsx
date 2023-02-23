@@ -6,14 +6,14 @@ import Typography from "@mui/joy/Typography";
 import Link from "@mui/joy/Link";
 import Favorite from "@mui/icons-material/Favorite";
 import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart';
-import Image from "../../../src/Assest/unsplash.jpg";
 import Backdrop from '@mui/material/Backdrop';
 import CircularProgress from '@mui/material/CircularProgress';
 import "@fontsource/poppins";
 import "./HomeCards.css"
 
-export default function CardsHome(props) {
-    const [open, setOpen] = React.useState(false);
+export default function HomeCards({image, Title, Paragraph}) {
+
+  const [open, setOpen] = React.useState(false);
   const handleClose = () => {
     setOpen(false);
   };
@@ -56,14 +56,14 @@ export default function CardsHome(props) {
               pointerEvents: "none",
             }}
           >
-            <img alt="" src={props.Image} />
+            <img alt="" src={image}/>
           </AspectRatio>
           <Box sx={{ display: "flex", gap: 1.5, mt: "auto" }}>
             <div>
               <Typography fontFamily='poppins'  textColor='white' fontWeight="lg" level="body2">
-                {props.Titel}
+                {Title}
               </Typography>
-              <Typography fontFamily='poppins' textColor='white' level="body2">{props.Paragraf}</Typography>
+              <Typography fontFamily='poppins' textColor='white' level="body2">{Paragraph}</Typography>
               
             </div>
             <Link
