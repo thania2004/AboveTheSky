@@ -1,15 +1,16 @@
 import React from "react";
-import Grid from "@mui/material/Grid";
 import Stack from "@mui/material/Stack";
-import Box from "@mui/material/Box";
-import Button from '@mui/material/Button';
-import SendIcon from '@mui/icons-material/Send';
-import '../../Components/Form/Form.css'
+import './Form.css'
 import Input from '@mui/joy/Input';
 import TextareaAutosize from '@mui/base/TextareaAutosize';
+import TransparentNav from "../../Components/Header/Header";
 
 const contacto = () => {
   return (
+    <div>
+    <div>
+      <TransparentNav/>
+    </div>
     <form
       class='mi-formGen'
       id="mi-form"
@@ -20,8 +21,8 @@ const contacto = () => {
         direction="column"
         justifyContent="center"
         alignItems="center"
-        spacing={5}
-        sx={{ color: "white", bgcolor: 'RGB(117, 44, 160, 0.85)', height:900}}
+        spacing={4}
+        sx={{ color: "white", bgcolor: 'RGB(117, 44, 160, 0.85)', height:700}}
       >
         <Stack direction="row"  spacing={8}  sx={{fontSize: '1.5rem',}}>
           <Stack sx={{ mx:1,}} >Email:</Stack>
@@ -49,6 +50,7 @@ const contacto = () => {
         <button class='button accept-btn'>Enviar</button>
       </Stack>
     </form>
+    </div>
   );
 };
 

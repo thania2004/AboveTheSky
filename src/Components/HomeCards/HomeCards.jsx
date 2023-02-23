@@ -4,7 +4,8 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import { CardActionArea } from '@mui/material';
-import Link from "@mui/joy/Link";
+import IconButton from '@mui/material/IconButton';
+import { Link } from "react-router-dom";
 import Favorite from "@mui/icons-material/Favorite";
 import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart';
 import Backdrop from '@mui/material/Backdrop';
@@ -32,43 +33,42 @@ export default function ActionAreaCard(props) {
           
         />
         <Box sx={{ display: "flex", gap: 1.5, mt: "auto", mx:4 }}>
-        <Link
+        <IconButton
               href="#dribbble-shot"
               level="body3"
               underline="none"
-              startDecorator={<Favorite />}
+              
               sx={{
                 color: "#fffb5c",
                 fontWeight: "md",
                 ml: "auto",
                 "&:hover": {color:'red'},
               }}
-            ></Link>
-            <Link onClick={handleToggle}
+            ><Favorite /></IconButton>
+            <IconButton onClick={handleToggle}
               href="#dribbble-shot"
               level="body3"
               underline="none"
-              startDecorator={<AddShoppingCartIcon />}
               sx={{
                 color: "#fffb5c",
                 fontWeight: "md",
-                "&:hover": {color:'#FFFBF3'},
+                "&:hover": {color:'#000478'},
               }}
-            ></Link>
+            ><AddShoppingCartIcon /></IconButton>
             </Box>
         <CardContent sx={{mx:4}}>
           <Typography fontFamily='poppins' gutterBottom variant="h4" component="div">
             {props.Title}
           </Typography>
-          <Typography fontFamily='poppins' variant="h6" color="black">
+          <Typography fontFamily='poppins' variant="h6" color="#FFFBF3">
            {props.price + " " + "€"}
           </Typography>
           <Typography fontFamily='poppins' variant="h6" color="black">
            {props.size}
           </Typography>
-          <Link to="/From"><Typography fontFamily='poppins' variant="body2" color="black">
-           {props.seller}
-          </Typography></Link>
+          <Typography fontFamily='poppins' variant="body2" color="black">
+           <Link style={{textDecoration:"none", color:'yellow'}} to="/Form">{props.seller}</Link>
+          </Typography>
           <Typography fontFamily='poppins' variant="body2" color="black" height="15vh">
            {props.description}
           </Typography>

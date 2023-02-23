@@ -4,7 +4,7 @@ import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import HomePage from './Pages/HomePage/HomePage';
 import Stars from './Pages/Stars/Stars';
 import Constellations from './Pages/Constellations/Constellations';
-import Form from './Components/Form/Form'
+import Form from './Pages/Form/Form'
 
 function App() {
 
