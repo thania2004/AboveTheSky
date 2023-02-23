@@ -21,7 +21,7 @@ export default function ActionAreaCard(props) {
         setOpen(!open);
       };
   return (
-    <Card spacing={4} elevation={3} sx={{bgcolor: 'RGB(117, 44, 160, 0.85)', Height: 600, maxWidth: 400,mx:2,borderRadius: '5%', }}>
+    <Card  spacing={4} elevation={3} sx={{ bgcolor: 'RGB(117, 44, 160, 0.85)', Height: 600, maxWidth: 400,mx:2,borderRadius: '5%'}}>
       <CardActionArea>
         <CardMedia sx={{ mx:1, width: 320, p:4 }}
           component="img"
