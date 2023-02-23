@@ -8,14 +8,14 @@ import TransparentNav from "../../Components/Header/Header";
 function Stars() {
 
   const [search, setSearch] = useState("");
-  const [starCards, setStarCards] = useState([])  
+  const [cards, setCards] = useState([])  
   const [stars, setStars] = useState([]);
 
   async function callGet() {
     await CallAxios().getStars()
       .then(res => {
         setStars(res.data);
-        setStarCards(res.data);
+        setCards(res.data);
       })
   }
   useEffect(() => { callGet() }, []);
@@ -24,7 +24,7 @@ function Stars() {
   return (
     <div>
       <div>
-      <TransparentNav setStars={setStars} search={search} setSearch={setSearch} starCards={starCards}/>
+      <TransparentNav setStars={setStars} search={search} setSearch={setSearch} cards={cards}/>
       </div>
       <Grid container spacing={2} columns={16} sx={{ mx: 5 }}>
         {stars.map(item => (

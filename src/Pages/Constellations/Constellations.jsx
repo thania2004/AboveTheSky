@@ -7,11 +7,15 @@ import TransparentNav from "../../Components/Header/Header";
 
 function Constellations() {
   const [constellations, setConstellations] = useState([]);
+  const [search, setSearch] = useState("");
+  const [cards, setCards] = useState([])  
+  
 
   async function callGet() {
     await CallAxios().getConstellations()
       .then(res => {
         setConstellations(res.data);
+        setCards(res.data);
       })
   }
   useEffect(() => { callGet() }, []);
@@ -20,7 +24,7 @@ function Constellations() {
   return (
     <div>
       <div>
-      <TransparentNav/>
+      <TransparentNav setConstellations={setConstellations} cards={cards} search={search} setSearch={setSearch}/>
       </div>
       <Grid container spacing={2} columns={16} sx={{ mx: 5 }} >
         {constellations.map(item => (

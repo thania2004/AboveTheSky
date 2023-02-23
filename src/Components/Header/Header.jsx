@@ -72,7 +72,7 @@ const TransparentBox = styled(Box)(({ theme }) => ({
   borderBottom: `1px solid ${alpha(theme.palette.common.white, 0.1)}`,
 }));
 
-const TransparentNav = ({search, setSearch, starCards, setStars}) => {
+const TransparentNav = ({search, setSearch, cards, setStars, setConstellations}) => {
   const theme = useTheme();
   const isSmallScreen = useMediaQuery(theme.breakpoints.down("sm"));
 
@@ -84,7 +84,7 @@ const TransparentNav = ({search, setSearch, starCards, setStars}) => {
   };
 
   const filter = (inputSearch) => {
-    var resultsSearch = starCards.filter((element) => {
+    var resultsSearch = cards.filter((element) => {
       if (
           element.name.toString().toLowerCase().includes(inputSearch.toLowerCase()) ||
           element.seller.toString().toLowerCase().includes(inputSearch.toLowerCase())
@@ -93,7 +93,9 @@ const TransparentNav = ({search, setSearch, starCards, setStars}) => {
       }
     });
     setStars(resultsSearch);
+    setConstellations(resultsSearch);
   };
+  
 
   return (
     <>
