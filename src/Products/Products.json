@@ -1,0 +1,143 @@
+{
+    "constellations": [
+        {
+            "id": 1,
+            "name": "Carina",
+            "price": 1200,
+            "description": "Carina (la Quilla) es una constelación austral que forma parte de la antigua constelación de Argo Navis (el Navío Argo)",
+            "image": "/Pictures/Carina.webp",
+            "seller": "Amazon"
+        },
+        {
+            "id": 2,
+            "name": "Canis Maior",
+            "price": 800,
+            "description": "El Can Mayor (Canis Maior) es una constelación que parece seguir, en su recorrido en el cielo debido al movimiento diurno, al «Gran Cazador», Orión.",
+            "image": "/Pictures/Canis Maior.jpg",
+            "seller": "NASA"
+        },
+        {
+            "id": 3,
+            "name": "Boyero",
+            "price": 1500,
+            "description": "Bootes o el Boyero es una de las 88 constelaciones modernas y era una de las 48 constelaciones listadas por Ptolomeo. Bootes parece ser una figura humana.",
+            "image": "/Pictures/Boyero.png",
+            "seller": "NASA"
+        },
+        {
+            "id": 4,
+            "name": "Centauro",
+            "price": 3000,
+            "description": "Centaurus (el Centauro), es una extensa constelación austral que se encuentra al norte de Crux y en el extremo norte de la Vía Láctea.",
+            "image": "/Pictures/Centauro.png",
+            "seller": "Ebay"
+        },
+        {
+            "id": 5,
+            "name": "Canis Minor",
+            "price": 1000,
+            "description": "Canis Minor, en castellano Can Menor es una de las 88 constelaciones modernas.",
+            "image": "/Pictures/Canis minor.webp",
+            "seller": "Caixa Bank"
+        },
+        {
+            "id": 6,
+            "name": "Águila",
+            "price": 400,
+            "description": "Aquila es una de las 48 constelaciones listadas por Ptolomeo, mencionada también por Eudoxo de Cnidos y Arato.",
+            "image": "/Pictures/Aguila.png",
+            "seller": "Tesla Space"
+        },
+        {
+            "id": 7,
+            "name": "Escorpio",
+            "price": 1350,
+            "description": "Escorpio es una de las 88 constelaciones modernas. Antiguamente esta constelación se representaba unida a la que hoy se conoce como Libra.",
+            "image": "/Pictures/Escorpio.jpg",
+            "seller": "Factoria F5"
+        },
+        {
+            "id": 8,
+            "name": "Orión",
+            "price": 9000,
+            "description": "Orión —el Cazador— es una constelación prominente, quizás la más conocida del cielo. Sus estrellas brillantes y visibles desde ambos hemisferios, hacen que esta constelación sea reconocida mundialmente. ",
+            "image": "/Pictures/Orion.webp",
+            "seller": "Caixa Bank"
+        }
+    ],
+    
+    "stars": [
+        {
+            "id": 1,
+            "name": "Sirio",
+            "price": 300,
+            "size": "Enana blanca",
+            "description": "La estrella, ubicada en la constelación Can Mayor, se encuentra a 8,6 años luz de distancia.",
+            "image": "/Pictures/Sirio.jpg",
+            "seller": "Amazon"
+        },
+        {
+            "id": 2,
+            "name": "Canopus",
+            "price": 500,
+            "size": "Supergigante blanco",
+            "description": "Una estrella sin igual, ubicada en la constelación Carina, que se encuentra a 309,8 años luz de distancia.",
+            "image": "/Pictures/Canopus.webp",
+            "seller": "NASA"
+        },
+        {
+            "id": 3,
+            "name": "Arturo",
+            "price": 350,
+            "size": "Gigante naranja",
+            "description": "La estrella Arturo, ubicada en la constelación Boyero, se encuentra a 36,7 años luz de distancia.",
+            "image": "/Pictures/Arturo.jpeg",
+            "seller": "NASA"
+        },
+        {
+            "id": 4,
+            "name": "Alfa Centauri A",
+            "price": 50,
+            "size": "Enana amarilla",
+            "description": "Una pequeña estrella, muy llamativa, ubicada en la constelación Centauro, que se encuentra a 4,37 años luz de distancia.",
+            "image": "/Pictures/Alfa-Centauri.jpg",
+            "seller": "NASA"
+        },
+        {
+            "id": 5,
+            "name": "Hadar",
+            "price": 100,
+            "size": "Gigante blanca",
+            "description": "La estrella Hadar, ubicada en la constelación Centauro, se encuentra a 530 años luz de distancia.",
+            "image": "/Pictures/Hadar.webp",
+            "seller": "Ebay"
+        },
+        {
+            "id": 6,
+            "name": "Altair",
+            "price": 50,
+            "size": "Enana blanca",
+            "description": "Una pequeña estrella, muy llamativa, ubicada en la constelación Águila, que se encuentra a 16,8 años luz de distancia.",
+            "image": "/Pictures/Altair.jpg",
+            "seller": "Tesla Space"
+        },
+        {
+            "id": 7,
+            "name": "Betelgeuse",
+            "price": 600,
+            "size": "Supergigante roja",
+            "description": "La estrella Betelgeuse, ubicada en la constelación Orión, se encuentra a 640 años luz de distancia.",
+            "image": "/Pictures/Betelgeuse.jpeg",
+            "seller": "NASA"
+        },
+        {
+            "id": 8,
+            "name": "Fomalhaut",
+            "price": 800,
+            "size": "Enana-subgigante blanca",
+            "description": "Una pequeña estrella, muy llamativa, ubicada en la constelación Piscis Austrinus, que se encuentra a 25 años luz de distancia.",
+            "image": "/Pictures/Fomalhaut.jpg",
+            "seller": "Caixa Bank"
+        }
+    ]
+}
