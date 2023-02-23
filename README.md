@@ -80,5 +80,5 @@
 
 <h2>11. Next Steps</h2>
 <ul>
-<li>Add functionality to the favourite, and add to the chart buttons.</li>
+<li>Add functionality to the favourite button, and add to the chart buttons.</li>
 </ul>
