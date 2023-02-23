@@ -11,6 +11,7 @@ import SearchIcon from "@mui/icons-material/Search";
 import La_Caixa_amarillo2 from "../../Assest/La_Caixa_amarillo2.png";
 import { useEffect, useState } from "react";
 import CallAxios from "../../services/CallAxios";
+import { Link } from "react-router-dom";
 
 const Search = styled("div")(({ theme }) => ({
   position: "relative",
@@ -127,10 +128,10 @@ const TransparentNav = () => {
             <Box
               sx={{ display: "flex", flexGrow: 1, my: 2, alignItems: "center" }}
             >
-              <img
+              <Link to="/"><img 
                 src={La_Caixa_amarillo2}
                 alt="La_Caixa_amarillo2"
-                height={isSmallScreen ? 50 : 75} />
+                height={isSmallScreen ? 50 : 75} /></Link>
               <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
                 <span
                   style={{

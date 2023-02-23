@@ -37,7 +37,7 @@ export default function HomePage() {
       </div>
       <Grid display="flex" justifyContent="space-between" alignItems="center" spacing={2} sx={{ mx: 8 }}>
         <h1 style={{ color: "white" }}>Estrellas</h1>
-        <Link to="/Stars"><h2 style={{ color: "white" }}>Ver más</h2></Link>
+        <Link style={{textDecoration:"none"}} to="/Stars"><h2 style={{ color: "white" }}>Ver más</h2></Link>
       </Grid>
 
       <Grid container spacing={2} columns={16} sx={{ mx: 5 }}>
@@ -57,7 +57,7 @@ export default function HomePage() {
       </Grid>
       <Grid display="flex" justifyContent="space-between" alignItems="center" spacing={2} sx={{ mx: 8 }}>
         <h1 style={{ color: "white" }}>Constelaciones</h1>
-        <Link to="/Constellations"><h2 style={{ color: "white" }}>Ver más</h2></Link>
+        <Link style={{textDecoration:"none"}} to="/Constellations"><h2 style={{ color: "white" }}>Ver más</h2></Link>
       </Grid>
 
       <Grid container spacing={2} columns={16} sx={{ mx: 5 }} >

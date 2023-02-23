@@ -3,34 +3,39 @@ import { useState, useEffect } from 'react';
 import CallAxios from '../../services/CallAxios';
 import HomeCards from '../../Components/HomeCards/HomeCards'
 import Grid from '@mui/material/Grid';
+import TransparentNav from "../../Components/Header/Header";
 
 function Constellations() {
-    const [constellations, setConstellations] = useState([]);
+  const [constellations, setConstellations] = useState([]);
 
-   async function callGet(){
-       await CallAxios().getConstellations()
-        .then(res => {
-            setConstellations(res.data);
-        })
-    }
-    useEffect(() => {callGet()},[]);
+  async function callGet() {
+    await CallAxios().getConstellations()
+      .then(res => {
+        setConstellations(res.data);
+      })
+  }
+  useEffect(() => { callGet() }, []);
 
 
   return (
-    <div><Grid container spacing={2} columns={16}  sx={{mx:5}} >
-    {constellations.map(item => (
-      <Grid sx={{mt:4}} key={item.id}>
-        <HomeCards
-          Image={item.image}
-          Title={item.name}
-          price={item.price}
-          size={item.size}
-          seller={item.seller}
-          description={item.description}
-        />
-      </Grid>
-    ))}
-  </Grid></div>
+    <div>
+      <div>
+      <TransparentNav/>
+      </div>
+      <Grid container spacing={2} columns={16} sx={{ mx: 5 }} >
+        {constellations.map(item => (
+          <Grid sx={{ mt: 4 }} key={item.id}>
+            <HomeCards
+              Image={item.image}
+              Title={item.name}
+              price={item.price}
+              size={item.size}
+              seller={item.seller}
+              description={item.description}
+            />
+          </Grid>
+        ))}
+      </Grid></div>
   )
 }
 
