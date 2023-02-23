@@ -29,9 +29,9 @@
 
 
 
-<h2>4. Project Demo above-the-sky-tawny.vercel.app</h2>
+<h2>4. Project Demo </h2>
 <div style="display:flex; flex-wrap:wrap; justify-content:center; margin:auto">
-<img style="width:550px; height:380px; margin:12px" src="" alt="Preliminary project demo"/>
+ above-the-sky-tawny.vercel.app
 </div>
 
 <h2>7. Sketch</h2> 
