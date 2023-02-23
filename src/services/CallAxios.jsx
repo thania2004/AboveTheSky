@@ -8,14 +8,12 @@ const CallAxios = () => {
     
     const getStars = async () => {
         const res = await axios.get(`${url}/stars`);
-        console.log(res);
         return res; 
     };
 
      
     const getConstellations = async () => {
         const res = await axios.get(`${url}/constellations`);
-        console.log(res);
         return res; 
     };
 
