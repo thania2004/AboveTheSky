@@ -66,9 +66,9 @@ export default function ActionAreaCard(props) {
           <Typography fontFamily='poppins' variant="h6" color="black">
            {props.size}
           </Typography>
-          <Typography fontFamily='poppins' variant="body2" color="black">
+          <Link to="/From"><Typography fontFamily='poppins' variant="body2" color="black">
            {props.seller}
-          </Typography>
+          </Typography></Link>
           <Typography fontFamily='poppins' variant="body2" color="black" height="15vh">
            {props.description}
           </Typography>
