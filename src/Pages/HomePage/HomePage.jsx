@@ -30,29 +30,35 @@ export default function HomePage() {
 
   return (
     <div>
-      {stars.map(item => (
-        <div key={item.id}>
-          <HomeCards
-            Image={item.image}
-            Title={item.name}
-            price={item.price}
-            size={item.size}
-            description={item.description} />
-        </div>
-      ))}
-
-      {constellations.map(item => (
-        <div key={item.id}>
-          <HomeCards
-            Image={item.image}
-            Title={item.name}
-            price={item.price}
-            size={item.size}
-            description={item.description} />
-        </div>
-      ))}
+      <h1>Estrellas</h1>
+      <div style={{ display: 'flex', flexDirection: 'row' }}>
+        {stars.map(item => (
+          <div key={item.id}>
+            <HomeCards
+              Image={item.image}
+              Title={item.name}
+              price={item.price}
+              size={item.size}
+              description={item.description}
+            />
+          </div>
+        )).splice (4)}
+      </div>
+      <h1>Constelaciones</h1>
+      <div style={{ display: 'flex', flexDirection: 'row', height: "500px" }}>
+        {constellations.map(item => (
+          <div key={item.id}>
+            <HomeCards
+              Image={item.image}
+              Title={item.name}
+              price={item.price}
+              size={item.size}
+              description={item.description}
+            />
+          </div>
+        )).splice (4)}
+      </div>
     </div>
-
   )
 
 
