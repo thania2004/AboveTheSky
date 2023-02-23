@@ -80,7 +80,7 @@
             "id": 2,
             "name": "Canopus",
             "price": 500,
-            "size": "Supergigante blanco-amarilla",
+            "size": "Supergigante blanco",
             "description": "Una estrella sin igual, ubicada en la constelación Carina, que se encuentra a 309,8 años luz de distancia.",
             "image": "/Pictures/Canopus.webp",
             "seller": "NASA"
