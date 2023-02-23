@@ -6,12 +6,13 @@ import Typography from "@mui/joy/Typography";
 import Link from "@mui/joy/Link";
 import Favorite from "@mui/icons-material/Favorite";
 import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart';
-import Image from "../../Assest/unsplash.jpg";
+import Image from "../../../src/Assest/unsplash.jpg";
 import Backdrop from '@mui/material/Backdrop';
 import CircularProgress from '@mui/material/CircularProgress';
 import "@fontsource/poppins";
+import "./HomeCards.css"
 
-export default function ContainerResponsive() {
+export default function CardsHome(props) {
     const [open, setOpen] = React.useState(false);
   const handleClose = () => {
     setOpen(false);
@@ -20,8 +21,8 @@ export default function ContainerResponsive() {
     setOpen(!open);
   };
   return (
-    <Box  sx={{ p:16, m:'auto', width:'30%', minHeight: 350 }}>
-      <Card elevation={3}
+    <Box   sx={{ boxShadow: 4, p:16, m:'auto', width:'30%', minHeight: 350 }}>
+      <Card class='box' elevation={3}
         
         sx={(theme) => ({
           bgcolor: 'RGB(117, 44, 160, 0.85)',
@@ -55,14 +56,14 @@ export default function ContainerResponsive() {
               pointerEvents: "none",
             }}
           >
-            <img alt="" src={Image} />
+            <img alt="" src={props.Image} />
           </AspectRatio>
           <Box sx={{ display: "flex", gap: 1.5, mt: "auto" }}>
             <div>
               <Typography fontFamily='poppins'  textColor='white' fontWeight="lg" level="body2">
-                Via lactea
+                {props.Titel}
               </Typography>
-              <Typography fontFamily='poppins' textColor='white' level="body2">Spaceman</Typography>
+              <Typography fontFamily='poppins' textColor='white' level="body2">{props.Paragraf}</Typography>
               
             </div>
             <Link
@@ -85,7 +86,7 @@ export default function ContainerResponsive() {
               sx={{
                 color: "#fffb5c",
                 fontWeight: "md",
-                "&:hover": {color:'#1D4BBB'},
+                "&:hover": {color:'#FFFBF3'},
               }}
             ></Link>
             
