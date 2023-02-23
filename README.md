@@ -68,6 +68,7 @@
 <li>Copy in the terminal: git clone https://github.com/RaulVillar/AboveTheSky.git</li>
 <li>Type in the IDE terminal: <b>npm install</b> and press intro.</li>
 <li>Write in the IDE terminal the command: <b>npm start</b>.</li>
+<li>Write in the IDE terminal the command: <b>npm run axios</b>.</li>
 
 <h2>10. Methodology:</h2>
 <ul>
