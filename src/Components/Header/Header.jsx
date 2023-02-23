@@ -9,8 +9,6 @@ import InputBase from "@mui/material/InputBase";
 import MenuIcon from "@mui/icons-material/Menu";
 import SearchIcon from "@mui/icons-material/Search";
 import La_Caixa_amarillo2 from "../../Assest/La_Caixa_amarillo2.png";
-import { useEffect, useState } from "react";
-import CallAxios from "../../services/CallAxios";
 import { Link } from "react-router-dom";
 
 const Search = styled("div")(({ theme }) => ({
@@ -74,25 +72,11 @@ const TransparentBox = styled(Box)(({ theme }) => ({
   borderBottom: `1px solid ${alpha(theme.palette.common.white, 0.1)}`,
 }));
 
-const TransparentNav = () => {
+const TransparentNav = ({search, setSearch, starCards, setStars}) => {
   const theme = useTheme();
   const isSmallScreen = useMediaQuery(theme.breakpoints.down("sm"));
 
-  const [stars, setStars] = useState([]);
-  const [constellations, setConstellations] = useState([]);
-  const [search, setSearch] = useState("");
 
-  async function callGet() {
-    await CallAxios()
-      .get()
-      .then((res) => {
-        setConstellations(res.data);
-
-      });
-  }
-  useEffect(() => {
-    callGet();
-  }, []);
 
   const handleChange = (e) => {
     setSearch(e.target.value);
@@ -100,13 +84,12 @@ const TransparentNav = () => {
   };
 
   const filter = (inputSearch) => {
-    var resultsSearch = constellations.filter((element) => {
-      if (element.name
-        .toString()
-        .toLowerCase()
-        .includes(inputSearch.toLowerCase()) ||
-        element.id.toString().toLowerCase().includes(inputSearch.toLowerCase())) {
-        return element;
+    var resultsSearch = starCards.filter((element) => {
+      if (
+          element.name.toString().toLowerCase().includes(inputSearch.toLowerCase()) ||
+          element.seller.toString().toLowerCase().includes(inputSearch.toLowerCase())
+        ) {
+          return element;
       }
     });
     setStars(resultsSearch);
@@ -114,13 +97,7 @@ const TransparentNav = () => {
 
   return (
     <>
-      <TransparentAppBar
-        stars={stars}
-        constellations={constellations}
-        search={search}
-        handleChange={handleChange}
-        filter={filter}
-        sx={{ backgroundColor: "transparent" }} position="static">
+      <TransparentAppBar sx={{ backgroundColor: "transparent" }} position="static">
         <TransparentBox>
           <Toolbar
             sx={{ ml: isSmallScreen ? 2 : 25, mx: isSmallScreen ? 2 : 25 }}
@@ -176,14 +153,6 @@ const TransparentNav = () => {
           </Toolbar>
         </TransparentBox>
       </TransparentAppBar>
-      <div>
-        {stars.map((item) => (
-          <div>
-            <p>{item.name}</p>
-            <img src={item.image} />
-          </div>
-        ))}
-      </div>
     </>
   );
 }
