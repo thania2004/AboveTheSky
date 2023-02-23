@@ -1,5 +1,5 @@
 {
-    "stars": [
+    "constellations": [
         {
             "id": 1,
             "name": "Carina",
@@ -66,7 +66,7 @@
         }
     ],
     
-    "constellations": [
+    "stars": [
         {
             "id": 1,
             "name": "Sirio",

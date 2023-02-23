@@ -3,18 +3,25 @@ import axios from 'axios';
 
 const CallAxios = () => {
   
-    const url = "http://localhost:5000/stars"
+    const url = "http://localhost:5000"
 
     
-    const get = async () => {
-        const res = await axios.get(url);
+    const getStars = async () => {
+        const res = await axios.get(`${url}/stars`);
         console.log(res);
-        return res;
-        
+        return res; 
+    };
+
+     
+    const getConstellations = async () => {
+        const res = await axios.get(`${url}/constellations`);
+        console.log(res);
+        return res; 
     };
 
     return {
-        get,
+        getStars,
+        getConstellations,
         url
     };
 }

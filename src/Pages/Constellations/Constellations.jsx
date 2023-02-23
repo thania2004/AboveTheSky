@@ -6,7 +6,7 @@ function Constellations() {
     const [constellation, setConstellations] = useState([]);
 
    async function callGet(){
-       await CallAxios().get()
+       await CallAxios().getConstellations()
         .then(res => {
             setConstellations(res.data);
         })
