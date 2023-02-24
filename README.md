@@ -29,9 +29,9 @@
 
 
 
-<h2>4. Project Demo (Preview - In Develpoment)</h2>
+<h2>4. Project Demo </h2>
 <div style="display:flex; flex-wrap:wrap; justify-content:center; margin:auto">
-<img style="width:550px; height:380px; margin:12px" src="" alt="Preliminary project demo"/>
+https://above-the-sky-tawny.vercel.app
 </div>
 
 <h2>7. Sketch</h2> 
@@ -44,6 +44,7 @@
 <p align="center">
 <img style="width:600px; height:300px; margin:12px" src="https://user-images.githubusercontent.com/116545731/220963493-3e61b76d-0ab7-4151-a6d8-37061ce4d008.png" alt="Home and stars view"/>
 </p>
+
 
 
 <h2>8. Stacks</h2>
@@ -71,6 +72,8 @@
 <li>Type in the IDE terminal: <b>npm install</b> and press intro.</li>
 <li>Write in the IDE terminal the command: <b>npm start</b>.</li>
 <li>Write in the IDE terminal the command: <b>npm run axios</b>.</li>
+<h3>To see Test</h3>
+<li>Write in the IDE terminal the command: <b>npm --save-dev jest</b> and after <b>npm run test</b>.</li>
 
 <h2>10. Methodology:</h2>
 <ul>
@@ -84,3 +87,18 @@
 <ul>
 <li>Add functionality to the favourite button, and add to the chart buttons.</li>
 </ul>
+
+<h2>12. Final Product</h2>
+
+<p>HOME PAGE </p>
+<img width="895" alt="homepage1" src="https://user-images.githubusercontent.com/116891108/221119217-0e56c638-2642-40a2-87fc-bb6d90d22138.png">
+<img width="878" alt="homepage2" src="https://user-images.githubusercontent.com/116891108/221119266-0fc5c3b1-9124-4f9d-a237-9da9210717cd.png">
+
+<p>view star movil </p>
+<img width="242" alt="viewstart movile" src="https://user-images.githubusercontent.com/116891108/221119439-60bba045-cada-44ad-b6fa-1b709609ab33.png">
+
+<p>Contact </p>
+<img width="917" alt="contact" src="https://user-images.githubusercontent.com/116891108/221119694-4424df43-d719-42a9-885e-804061d6648e.png">
+
+
+
