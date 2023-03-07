@@ -75,8 +75,6 @@ https://above-the-sky-tawny.vercel.app
 <img style="display: flex-wrap" align="center"  height="60" width="120" alt="Apache" src="https://img.shields.io/badge/Apache-D22128?style=for-the-badge&logo=Apache&logoColor=white"/>
 <img style="display: flex-wrap" align="center"  height="60" width="120" alt="GitHub" src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"/>
 <img style="display: flex-wrap" align="center"  height="60" width="120" alt="Git" src="https://img.shields.io/badge/GIT-E44C30?style=for-the-badge&logo=git&logoColor=white"/>
-<img style="display: flex-wrap" align="center"  height="60" width="120" alt="PHP" src="https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white"/>
-<img style="display: flex-wrap" align="center"  height="60" width="120" alt="Composer" src="https://img.shields.io/badge/Composer-885630?style=for-the-badge&logo=Composer&logoColor=white"/>
 <img style="display: flex-wrap" align="center"  height="60" width="120" alt="Jest" src="https://img.shields.io/badge/Jest-C21325?style=for-the-badge&logo=jest&logoColor=white"/>
 </div>
 
