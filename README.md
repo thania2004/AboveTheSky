@@ -15,7 +15,7 @@
 
 </ul>
 
-<h2>3. Fullstack Developer Team</h2>
+<h2>3. Fullstack Developer Team 💻</h2>
 
 - [Alicia Fernandez](https://github.com/alcfdez)- Product Owner
 - [Miriam García](https://github.com/miriamremesal)- Scrum Master
@@ -73,14 +73,56 @@ https://above-the-sky-tawny.vercel.app
 <li>Axios server.</li>
 <br>
 
-<h3>To install our project</h3>
-<li>Open IDE</li>
-<li>Copy in the terminal: git clone https://github.com/RaulVillar/AboveTheSky.git</li>
-<li>Type in the IDE terminal: <b>npm install</b> and press intro.</li>
-<li>Write in the IDE terminal the command: <b>npm start</b>.</li>
-<li>Write in the IDE terminal the command: <b>npm run axios</b>.</li>
-<h3>To see Test</h3>
-<li>Write in the IDE terminal the command: <b>npm --save-dev jest</b> and after <b>npm run test</b>.</li>
+<h2>To install our project ⚗️🧪</h2>
+<h3>Open IDE</h3>
+
+<p>Copy in the terminal:</p>
+
+```
+git clone: https://github.com/RaulVillar/AboveTheSky.git
+
+```
+
+<p>Type in the IDE terminal the following command and press intro: </p>
+
+```
+npm install
+
+```
+
+<p>Write in the IDE terminal the command: </p>
+
+```
+npm start
+
+```
+
+
+
+<p>Write in the IDE terminal the command: </p>
+
+```
+npm run axios
+
+```
+
+
+<h2>🏅 Test Initialization🏅</h2>
+
+
+<p>Write in the IDE terminal the command:</p>
+
+```
+npm --save-dev jest
+
+```
+<p>And after that, copy the  following command and press intro</p>
+
+```
+npm run test
+
+```
+
 
 <h2>10. Methodology:</h2>
 <ul>
