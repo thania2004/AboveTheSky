@@ -68,9 +68,12 @@ https://above-the-sky-tawny.vercel.app
 
 
 
-<h2>9. Required:</h2>
-<li>NPM Installed.</li>
-<li>Axios server.</li>
+<h2>9. Installation requirements ⚗️🧪</h2>
+<li>NPM installed: https://nodejs.org/en/download/</li>
+<li>Axios server: https://www.npmjs.com/package/axios#installing</li>
+
+
+
 <br>
 
 <h2>To install our project ⚗️🧪</h2>
