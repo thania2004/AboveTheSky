@@ -1,11 +1,8 @@
 <h1 align="center">✨Above the Sky✨</h1>
 
-<h2>1. Project description:</h2>
-<ul>
-<li>Make a Marketplace free-themed.</li>
-<li>There must be a web with a announcements list. The user should be alloowed to search for the content and contact with the seller.</li>
+<h2>1. Project description 🥇</h2>
+<p>Above the Sky is a web application that was developed in just two days for a hackathon competition. Created using cutting-edge technology such as React and Axios, this app offers users the unique opportunity to buy and name their own star. Although the concept is fictional, the collaboration and skill of the development team made the project a success. With a simple and user-friendly interface, users can browse through a catalog of stars and select the one they want to purchase. They can also customize the star's name and dedication message before completing their order. Above the Sky showcases the potential of technology to bring imaginative ideas to life in a short period of time.</p>
 
-</ul>
 
 <h2>2. Functionalities:</h2>
 
